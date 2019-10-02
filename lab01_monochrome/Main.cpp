@@ -3,7 +3,6 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
 #include <iostream>
-#include <string>
 #include "GrayScale.h"
 #include "math.h"
 
@@ -12,11 +11,9 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	String imageName("picture1.jpg"); // by default
+	String imageName("picture.jpg"); // by default
 	if (argc > 1)
-	{
 		imageName = argv[1];
-	}
 
 	Mat imagesrc = imread(imageName, IMREAD_COLOR);
 	Mat image(imagesrc);
